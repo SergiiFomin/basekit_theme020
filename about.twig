@@ -1,0 +1,168 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+    <div class="global">
+        <!--header-->
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <article class="span12">
+                            <div class="row">
+                                <article class="span6">
+                                    {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
+                                </article>
+                                <article class="span6">
+                                    {{widget('profile', 'form', { 'profileType':'form'})|raw}}
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="navigation">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">                        
+                        <div class="row">
+                            <article class="span7">
+                                {{widget('extendednavigation', 'extendednavigation', {"align":"center"})|raw}}
+                            </article>
+                            <article class="span5 right">
+                                {{widget('profile', 'phone', { 'profileType':'phone', 'phone':'+1 959 603 6035'})|raw}}
+                                {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+                            </article>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--content-->
+        <div id="contentInner">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+
+                        {{zone('main')|raw}}
+                        
+                        
+                        <div class="row">
+                            <article class="span4">
+                                {{widget('content', 'title1', {content: '<h2>About us</h2>', lines: 'all'})|raw}}
+                                {{widget('image', 'image', { 'src': asset('images/page2-img1.jpg'), 'imageWidth': '768px'})|raw}}
+                                {{widget('content', 'text1', {content: '<h4>Vestibulum iaculis lacinia est Proin dictum elementum velit.</h4><p>Vestibulum iaculis lacinia est. Prn dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, sectetuer adipiscing elit. Pellentesque sed d. Aliquam congue fermentum nisl. Mris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula.</p><p>Aliquam dapibus tincidunt metus. Praesent justo dolor lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes.</p>', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+                            </article>
+                            <article class="span4">
+                                {{widget('content', 'title2', {content: '<h2>Our mission</h2>', lines: 'all'})|raw}}
+                                {{widget('content', 'text2', {content: '<ul class="drop"><li><span class="drop">1</span><div class="overflow"><h4>Vestibulum iaculisem lacinia est Proin dictum elemen.</h4><p>Vestibulum iaculis lacinia est. Punerurn dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, sectetuer adipiscing elitellentesque sed. Aliquam congue fermentum nisl. Mris accumsan nulla vel diam.</p></div></li><li><span class="drop">2</span><div class="overflow"><h4>Praesent vestibulum molest lacus Aenean nonummy.</h4><p>Vestibulum iaculis lacinia est. Punerurn dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, sectetuer adipiscing elitellentesque sed. Aliquam congue fermentum nisl. Mris accumsan nulla vel diam.</p></div></li><li><span class="drop">3</span><div class="overflow"><h4>Sedut perspiciat unde omnis iste natus error sit.</h4><p>Vestibulum iaculis lacinia est. Punerurn dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, sectetuer adipiscing elitellentesque sed. Aliquam congue fermentum nisl. Mris accumsan nulla vel diam.</p></div></li></ul>', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+                            </article>
+                            <article class="span4">
+                                {{widget('content', 'title3', {content: '<h2>Staff</h2>', lines: 'all'})|raw}}
+                                <div class="row">
+                                    <article class="span2">
+                                        {{widget('image', 'teamimage1', { 'src': asset('images/team-img1.jpg'), 'imageWidth': '640px'})|raw}}
+                                        {{widget('image', 'teamimage2', { 'src': asset('images/team-img2.jpg'), 'imageWidth': '640px'})|raw}}
+                                        {{widget('image', 'teamimage3', { 'src': asset('images/team-img3.jpg'), 'imageWidth': '640px'})|raw}}
+                                    </article>
+                                    <article class="span2">
+                                        {{widget('image', 'teamimage4', { 'src': asset('images/team-img4.jpg'), 'imageWidth': '640px'})|raw}}
+                                        {{widget('image', 'teamimage5', { 'src': asset('images/team-img5.jpg'), 'imageWidth': '640px'})|raw}}
+                                        {{widget('image', 'teamimage6', { 'src': asset('images/team-img6.jpg'), 'imageWidth': '640px'})|raw}}
+                                    </article>
+                                </div> 
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+                            </article>
+                        </div>
+                        <!-- main -->
+
+                    </article>
+                </div>
+            </div>
+            <div class="mainbottom">
+                <div class="container">
+                    <div class="row">
+                        <article class="span12">
+                            {{widget('content', 'title4', {content: '<h2>Testimonials</h2>', lines: 'all'})|raw}}
+                            <div class="row">
+                                <article class="span3">
+                                    {{widget('content', 'text3', {content: '<blockquote>Vestibulum iaculis lacinia est punerurn dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, sectetuer adipiscing elitellentesque sed. Aliquam congue fermentum nisl. Mris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod.</blockquote>Mark Johnson', lines: 'all'})|raw}}
+                                    {{widget('space', 'space', {'height': '50'})|raw}}
+                                </article>
+                                <article class="span3">
+                                    {{widget('content', 'text4', {content: '<blockquote>Vestibulum iaculis lacinia est punerurn dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, sectetuer adipiscing elitellentesque sed. Aliquam congue fermentum nisl. Mris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod.</blockquote>Bradley Grosh', lines: 'all'})|raw}}
+                                    {{widget('space', 'space', {'height': '50'})|raw}}
+                                </article>
+                                <article class="span3">
+                                    {{widget('content', 'text5', {content: '<blockquote>Vestibulum iaculis lacinia est punerurn dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, sectetuer adipiscing elitellentesque sed. Aliquam congue fermentum nisl. Mris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod.</blockquote>Jessica Priston', lines: 'all'})|raw}}
+                                    {{widget('space', 'space', {'height': '50'})|raw}}
+                                </article>
+                                <article class="span3">
+                                    {{widget('content', 'text6', {content: '<blockquote>Vestibulum iaculis lacinia est punerurn dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, sectetuer adipiscing elitellentesque sed. Aliquam congue fermentum nisl. Mris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod.</blockquote>Sam Kromstain', lines: 'all'})|raw}}
+                                    {{widget('space', 'space', {'height': '50'})|raw}}
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <section class="span12">
+                        <div class="row">
+                            <article class="span3">
+                                {{widget('logo', 'logo', {"defaultlogo": asset('images/logo2.png')})|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+                            </article>
+                            <article class="span6">
+                                
+                                <div class="row">
+                                    <article class="span2">
+                                        {{widget('content', 'fcontent1', {content: '<i class="fa fa-comment"></i><ul><li><a href="#">Our blog</a></li><li><a href="#">About our company</a></li><li><a href="#">Newsletters</a></li></ul>', lines: 'all'})|raw}}
+                                        {{widget('space', 'space', {'height': '30'})|raw}}
+                                    </article>
+                                    <article class="span2">
+                                        {{widget('content', 'fcontent2', {content: '<i class="fa fa-thumbs-o-up"></i><ul><li><a href="#">New resources</a></li><li><a href="#">Jobs</a></li><li><a href="#">Ask an expert</a></li></ul>', lines: 'all'})|raw}}
+                                        {{widget('space', 'space', {'height': '30'})|raw}}
+                                    </article>
+                                    <article class="span2">
+                                        {{widget('content', 'fcontent3', {content: '<i class="fa fa-file-text-o"></i><ul><li><a href="#">Privacy policy</a></li><li><a href="#">Terms & conditions</a></li><li><a href="#">Case studies</a></li></ul>', lines: 'all'})|raw}}
+                                        {{widget('space', 'space', {'height': '30'})|raw}}
+                                    </article>
+                                </div>
+                                
+                                {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+                            <article class="span1"></article>
+                            <article class="span2">
+                                {{widget('content', 'fcontent4', {content: '<i class="fa fa-envelope-o"></i>', lines: 'all'})|raw}}
+                                {{widget('content', 'content', {content: '<p>8901 Marmora Road<br />Glasgow, DO4 89GR.<br /><span>Freephone:</span>+1 800 559 6580<br /><span>Telephone:</span>+1 959 603 6035<br /><span>FAX:</span>+ 1 504 889 9898</p>', lines: 'all'})|raw}}
+                                <div class="mail">
+                                    {{widget('content', 'content', {content: 'E-mail:', lines: 'all'})|raw}}
+                                    {{widget('profile', 'email', { 'profileType':'email', 'email':'mail@demolink.org'})|raw}}
+                                </div>
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+                            </article>
+                        </div>
+
+                        {{widget('companyname', 'companyname', {"business": "handyman"})|raw}}
+                        {{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'&copy 2013'})|raw}}
+                        {{widget('space', 'space', {'height': '30'})|raw}}
+
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </div>    
+</div>
+
+{% endblock %}

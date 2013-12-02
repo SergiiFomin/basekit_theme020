@@ -86,7 +86,7 @@
 
                         <div class="row">
                             <article class="span8">
-                                {{widget('content', 'content', {content: '<h1>Quality higher than the price</h1>', lines: 'all'})|raw}}
+                                {{widget('content', 'title1', {content: '<h1>Quality higher than the price</h1>', lines: 'all'})|raw}}
                                 <div class="row icons">
                                     <article class="span4">
                                         {{widget('image', 'icon1', { 'src': asset('images/page1_icon1.png'), 'imageWidth': '78px'})|raw}}
@@ -136,35 +136,35 @@
                                     </article>
                                 </div>
                                 <div id="submit">
-                                    {{widget('content', 'content', {content: '<h3>We are interested in hearing from you.</h3>Write about your primary interest right now!', lines: 'all'})|raw}}
-                                    {{widget('button', 'button', {italic: false, text:'Submit', 'align':'widget-align-left'})|raw}}
+                                    {{widget('content', 'submitcontent', {content: '<h3>We are interested in hearing from you.</h3>Write about your primary interest right now!', lines: 'all'})|raw}}
+                                    {{widget('button', 'submitbutton', {italic: false, text:'Submit', 'align':'widget-align-left'})|raw}}
                                 </div>
                                 {{widget('space', 'space', {'height': '50'})|raw}}
                             </article>
                             <article class="span4">
-                                {{widget('content', 'content', {content: '<h2>They say</h2>', lines: 'all'})|raw}}
+                                {{widget('content', 'title2', {content: '<h2>They say</h2>', lines: 'all'})|raw}}
                                 <div class="blockquote">
                                     {{widget('image', 'blockquoteimage1', { 'src': asset('images/blockquote1.jpg'), 'imageWidth': '107px'})|raw}}
                                     <div class="overflow">
-                                        {{widget('content', 'content', {content: '<p>"Sed ut perspicia iste natus error sit voluptatem accusantium doloremque laudantium, totrem aperiam, eaque ipsa quae ab illo invento eritatis et quasi architecto.</p><div>Robert Frost</div><em>Aliquam erat volu</em>', lines: 'all'})|raw}}
+                                        {{widget('content', 'blockquotecontent1', {content: '<p>"Sed ut perspicia iste natus error sit voluptatem accusantium doloremque laudantium, totrem aperiam, eaque ipsa quae ab illo invento eritatis et quasi architecto.</p><div>Robert Frost</div><em>Aliquam erat volu</em>', lines: 'all'})|raw}}
                                     </div>
                                     <div class="clear"></div>
                                     {{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
-                                    {{widget('image', 'blockquoteimage1', { 'src': asset('images/blockquote2.jpg'), 'imageWidth': '107px'})|raw}}
+                                    {{widget('image', 'blockquoteimage2', { 'src': asset('images/blockquote2.jpg'), 'imageWidth': '107px'})|raw}}
                                     <div class="overflow">
-                                        {{widget('content', 'content', {content: '<p>"Sed ut perspicia iste natus error sit voluptatem accusantium doloremque laudantium, totrem aperiam, eaque ipsa quae ab illo invento eritatis et quasi architecto.</p><div>Samantha Zen</div><em>Mauris ferme</em>', lines: 'all'})|raw}}
+                                        {{widget('content', 'blockquotecontent2', {content: '<p>"Sed ut perspicia iste natus error sit voluptatem accusantium doloremque laudantium, totrem aperiam, eaque ipsa quae ab illo invento eritatis et quasi architecto.</p><div>Samantha Zen</div><em>Mauris ferme</em>', lines: 'all'})|raw}}
                                     </div>
                                     <div class="clear"></div>
                                     {{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
-                                    {{widget('image', 'blockquoteimage1', { 'src': asset('images/blockquote3.jpg'), 'imageWidth': '107px'})|raw}}
+                                    {{widget('image', 'blockquoteimage3', { 'src': asset('images/blockquote3.jpg'), 'imageWidth': '107px'})|raw}}
                                     <div class="overflow">
-                                        {{widget('content', 'content', {content: '<p>"Sed ut perspicia iste natus error sit voluptatem accusantium doloremque laudantium, totrem aperiam, eaque ipsa quae ab illo invento eritatis et quasi architecto.</p><div>Ashley McCain</div><em>Proin ullamcor</em>', lines: 'all'})|raw}}
+                                        {{widget('content', 'blockquotecontent3', {content: '<p>"Sed ut perspicia iste natus error sit voluptatem accusantium doloremque laudantium, totrem aperiam, eaque ipsa quae ab illo invento eritatis et quasi architecto.</p><div>Ashley McCain</div><em>Proin ullamcor</em>', lines: 'all'})|raw}}
                                     </div>
                                     <div class="clear"></div>
                                     {{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
-                                    {{widget('image', 'blockquoteimage1', { 'src': asset('images/blockquote4.jpg'), 'imageWidth': '107px'})|raw}}
+                                    {{widget('image', 'blockquoteimage4', { 'src': asset('images/blockquote4.jpg'), 'imageWidth': '107px'})|raw}}
                                     <div class="overflow">
-                                        {{widget('content', 'content', {content: '<p>"Sed ut perspicia iste natus error sit voluptatem accusantium doloremque laudantium, totrem aperiam, eaque ipsa quae ab illo invento eritatis et quasi architecto.</p><div>Dustin Trees</div><em>Ipsum aucto</em>', lines: 'all'})|raw}}
+                                        {{widget('content', 'blockquotecontent4', {content: '<p>"Sed ut perspicia iste natus error sit voluptatem accusantium doloremque laudantium, totrem aperiam, eaque ipsa quae ab illo invento eritatis et quasi architecto.</p><div>Dustin Trees</div><em>Ipsum aucto</em>', lines: 'all'})|raw}}
                                     </div>
                                     <div class="clear"></div>
                                     {{widget('space', 'space', {'height': '50'})|raw}}
@@ -182,13 +182,13 @@
                         <article class="span12">
                             <div class="row">
                                 <article class="span6">
-                                    {{widget('content', 'content', {content: '<h2>We will build you an outstanding house!</h2>', lines: 'all'})|raw}}
-                                    {{widget('content', 'content', {content: '<p>Quisque nulla. Vestibulum libe, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh. Etiam ceo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus.</p><p>Suspendisse sollicitudin velit s Ut pharetra augue nec augue. Nam elit magna, hendrerit sit amet, tincidra sed, nulla. Donec porta diam eu massa. Quisque diam lorem, interdum vitae, dapibus ac.</p>', lines: 'all'})|raw}}
-                                    {{widget('button', 'button', {italic: false, text:'View all videos', 'align':'widget-align-left'})|raw}}
+                                    {{widget('content', 'title3', {content: '<h2>We will build you an outstanding house!</h2>', lines: 'all'})|raw}}
+                                    {{widget('content', 'bottomcontent1', {content: '<p>Quisque nulla. Vestibulum libe, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh. Etiam ceo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus.</p><p>Suspendisse sollicitudin velit s Ut pharetra augue nec augue. Nam elit magna, hendrerit sit amet, tincidra sed, nulla. Donec porta diam eu massa. Quisque diam lorem, interdum vitae, dapibus ac.</p>', lines: 'all'})|raw}}
+                                    {{widget('button', 'bottombutton', {italic: false, text:'View all videos', 'align':'widget-align-left'})|raw}}
                                     {{widget('space', 'space', {'height': '50'})|raw}}
                                 </article>
                                 <article class="span6">
-                                    {{widget('youtube', 'thisunqiuewidgetname', {'videoId': 'j9Hjrs6WQ8M', 'userInput': '<iframe width="560" height="315" src="http://www.youtube.com/embed/Ok2VamxrYAY" frameborder="0" allowfullscreen></iframe>'})|raw}}
+                                    {{widget('youtube', 'youtube', {'videoId': 'j9Hjrs6WQ8M', 'userInput': '<iframe width="560" height="315" src="http://www.youtube.com/embed/Ok2VamxrYAY" frameborder="0" allowfullscreen></iframe>'})|raw}}
                                     {{widget('space', 'space', {'height': '50'})|raw}}
                                 </article>
                             </div>

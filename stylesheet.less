@@ -1774,6 +1774,24 @@ ul.drop{
           }
         }
       }
+    }    
+    /* NAV ICON */
+    .widget .extendednavigation a.pull {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 6px;
+      &:after {
+        content:"";
+        background: image('/images/nav-icon.png') no-repeat;
+        background-position: center;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: -41px;
+      }
     }
   }
 

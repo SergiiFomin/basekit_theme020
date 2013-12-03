@@ -1342,31 +1342,31 @@ input.button,
         height:100%;
       }
       .content-wrapper {
-        position:absolute;
-        bottom:0;
-        left:0;
-        right:0;
-        top:auto;
-        background-color: hsla(hue(@color-swatch2), saturation(@color-swatch2), lightness(lighten(@color-swatch4,10%)), 1);
+        display: inline-block;
+        position: absolute;
+        bottom: auto;
+        left: 60px;
+        right: auto;
+        top: 40%;
+        background-color: @color-swatch3;
+        text-transform: uppercase;
         .title {
           display: inline-block;
-          padding: 5px 20px 0 20px;
-          font-family: @font-swatch5-font-family;
-          font-size: @font-swatch5-font-size;
-          font-weight: @font-swatch5-font-weight;
-          line-height: bkscale(@font-swatch5-line-height, 0.55);
+          padding: 46px 46px 0 46px;
+          font-family: @font-swatch1-font-family;
+          font-size: @font-swatch1-font-size;
+          font-weight: @font-swatch1-font-weight;
+          line-height: @font-swatch1-line-height;
           color: @color-swatch1;
-          letter-spacing: @font-swatch5-letter-spacing;
         }
         .description {
           display: block;
-          padding: 6px 20px;
-          font-family: @font-swatch5-font-family;
-          font-size: @font-swatch5-font-size;
-          font-weight: @font-swatch5-font-weight;
-          line-height: bkscale(@font-swatch5-line-height, 0.55);
+          padding: 0px 46px 46px 46px;
+          font-family: @font-swatch1-font-family;
+          font-size: @font-swatch1-font-size;
+          font-weight: @font-swatch1-font-weight;
+          line-height: @font-swatch1-line-height;
           color: @color-swatch1;
-          letter-spacing: @font-swatch5-letter-spacing;
         }
       }
     }
@@ -1722,6 +1722,27 @@ ul.drop{
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
+  .responsiveslideshow{
+    .slideshow-widget{
+      padding: 0;   
+      >ul.slideshow-image-list{
+        .content-wrapper{
+          top: 70%;
+          .title {
+            padding: 30px 30px 0 30px;
+            font-size: @font-swatch1-font-size/2;
+            line-height: @font-swatch1-line-height/2;
+          }
+          .description {
+            padding: 0px 30px 30px 30px;
+            font-size: @font-swatch1-font-size/2;
+            line-height: @font-swatch1-line-height/2;
+          }
+        }
+      }
+    }
+  }
+
   /* NAV */
   .widget.extendednavigation {
     display: block;
@@ -1755,12 +1776,7 @@ ul.drop{
       }
     }
   }
-  .widget.navigation ul li {
-    margin-right: 20px;
-    &:before {
-      display: none;
-    }
-  }
+
 }
 
 /*== Up to 340px =====================================================
